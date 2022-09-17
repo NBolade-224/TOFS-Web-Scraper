@@ -4,7 +4,7 @@ import openpyxl
 #########################################################################################################################################
 ################ EXCEL FILE: THIS FILE WILL PROVIDE THE SKUS THAT WILL BE SEARCHED, AND THEN THE PRICES FOUND WILL BE WRITTEN TO THIS FILE.
 #########################################################################################################################################
-ExcelFile = openpyxl.load_workbook("C:\\Users\\nickb\\Videos\\Commercial Testing\\MHStar SKU.xlsx")
+ExcelFile = openpyxl.load_workbook("MHStar SKU.xlsx")
 ExcelSheet = ExcelFile.active
 
 mylist = []
@@ -79,6 +79,6 @@ for x in dict2:
 
 ExcelSheet['B1'] = "Price"
 
-ExcelFile.save('C:\\Users\\nickb\\Videos\\Commercial Testing\\MHStar SKU.xlsx')
+ExcelFile.save('MHStar SKU.xlsx')
 
 
